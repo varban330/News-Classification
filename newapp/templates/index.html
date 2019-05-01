@@ -1,0 +1,289 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Text Classification WebApp</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  
+    <!-- Custom CSS -->
+    <link href="{% static 'css/stylish-portfolio.min.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top"><pre class="white-text">Home             </pre></a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about"><pre class="white-text">Introduction    </pre></a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services"><pre class="white-text">Implementation Steps</pre></a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio"><pre class="white-text">Applications       </pre></a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#demo"><pre class="white-text">Demo               </pre></a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact"><pre class="white-text">Contact       </pre></a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#"><pre class="white-text">Documentation</pre></a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#"><pre class="white-text">Presentation</pre></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">News Classification</h1>
+        <h3 class="mb-5">
+          <em>A WebApp that helps in Classifying News Articles</em>
+        </h3>
+        <a class="waves-effect waves-light btn btn-large js-scroll-trigger" href="#about"">Find Out More</a>
+        <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>What is Text Classification?</h2>
+            <p class="lead mb-5"> It is one of the important and typical task in supervised machine learning (ML). Assigning categories to documents, which can be a web page, library book, media articles, gallery etc. has many applications like e.g. spam filtering, email routing, sentiment analysis etc.
+              <a href="https://en.wikipedia.org/wiki/Document_classification">Know More</a>!</p>
+              <a class="waves-effect waves-light btn btn-large js-scroll-trigger" href="#services">Know More about the Project</a>
+            <!-- <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Know More about the Project</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="content-section bg-primary text-white text-center" id="services">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">PYTHON</h3>
+          <h2 class="mb-5">Steps Taken to Implement it</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Step 1:Dataset Preparation</strong>
+            </h4>
+            <p class="text-faded mb-0">The first step is the Dataset Preparation step which includes the process of loading a dataset and performing basic pre-processing. The dataset is then splitted into train and validation sets.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Step 2:Feature Engineering</strong>
+            </h4>
+            <p class="text-faded mb-0">The next step is the Feature Engineering in which the raw dataset is transformed into flat features which can be used in a machine learning model. This step also includes the process of creating new features from the existing data.</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Step 3:Model Training</strong>
+            </h4>
+            <p class="text-faded mb-0">The final step is the Model Building step in which a machine learning model is trained on a labelled dataset.
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Step 4:Testing</strong>
+            </h4>
+            <p class="text-faded mb-0">Testing the model on a dataset to check how well the model is performing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Callout -->
+    <section class="callout">
+      <div class="container text-center">
+        <h2 class="mx-auto mb-5">Algorithm
+          <em>used</em>
+          in this project!</h2>
+          <h3>Naive Bayes</h3>
+          <p class="lead mb-5">It is a classification technique based on Bayes’ Theorem with an assumption of independence among predictors. In simple terms, a Naive Bayes classifier assumes that the presence of a particular feature in a class is unrelated to the presence of any other feature. For example, a fruit may be considered to be an apple if it is red, round, and about 3 inches in diameter. Even if these features depend on each other or upon the existence of the other features, all of these properties independently contribute to the probability that this fruit is an apple and that is why it is known as ‘Naive’.
+
+Naive Bayes model is easy to build and particularly useful for very large data sets. Along with simplicity, Naive Bayes is known to outperform even highly sophisticated classification methods.</p>
+         <a class="waves-effect waves-light btn btn-large js-scroll-trigger" href="https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/">To Know More!</a>
+        <!-- <a class="btn btn-primary btn-xl" href="https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/">To Know More!</a> -->
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">PYTHON</h3>
+          <h2 class="mb-5">Applications of Naive Bayes</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="http://www.tothenew.com/blog/when-you-take-your-machine-learning-models-to-production-for-real-time-predictions/">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Real time Prediction</h2>
+                  <p class="mb-0">Naive Bayes is an eager learning classifier and it is sure fast. Thus, it could be used for making predictions in real time.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="{% static 'img/portfolio-1.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://towardsdatascience.com/multi-class-text-classification-with-scikit-learn-12f1e60e0a9f">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Multi class Prediction</h2>
+                  <p class="mb-0">This algorithm is also well known for multi class prediction feature. Here we can predict the probability of multiple classes of target variable.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="{% static 'img/portfolio-2.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://hackernoon.com/how-to-build-a-simple-spam-detecting-machine-learning-classifier-4471fe6b816e">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Spam Filtering/ Sentiment Analysis</h2>
+                  <p class="mb-0"> Naive Bayes classifiers mostly used in text classification (due to better result in multi class problems and independence rule) have higher success rate as compared to other algorithms. As a result, it is widely used in Spam filtering (identify spam e-mail) and Sentiment Analysis (in social media analysis, to identify positive and negative customer sentiments).</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="{% static 'img/portfolio-3.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://en.wikipedia.org/wiki/Recommender_system">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Recommendation System</h2>
+                  <p class="mb-0">Naive Bayes Classifier and Collaborative Filtering together builds a Recommendation System that uses machine learning and data mining techniques to filter unseen information and predict whether a user would like a given resource or not.</p>
+                </span>
+              </span>
+              <img class="img-fluid" src="{% static 'img/portfolio-4.jpg' %}" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="content-section bg-primary text-white" id="demo">
+      <div class="container text-center">
+        <h2 class="mb-4">Enter text to classify</h2>
+       <form class="col s12" action="/predict" method="post">{% csrf_token %}
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="textarea1" name="textarea" class="materialize-textarea" placeholder="Enter the news article"></textarea>
+                <label for="textarea1"></label>
+              </div>
+            </div>
+            <br>
+        <br> 
+        <a class="waves-effect waves-light btn btn-large js-scroll-trigger" id="predict" type="submit" href="#demo">Predict!</a>
+          </form>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section id="contact" class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.400249091264!2d81.86101111501542!3d25.491694683760077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399aca791f4345cf%3A0x259dbb85fa370618!2sComputer+Centre%2C+MNNIT%2C+Barrister+Mullah+Colony%2C+MNNIT+Allahabad+Campus%2C+Teliarganj%2C+Allahabad%2C+Uttar+Pradesh+211002!5e0!3m2!1sen!2sin!4v1530631456814" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <br/>
+      
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-facebook"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="#">
+              <i class="icon-social-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="#">
+              <i class="icon-social-github"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Your Website 2017</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+      
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+  </body>
+<script>
+    $(document).ready(function(){
+      $("#predict").click(function(){
+        var textarea = $("#textarea1").val();
+        $.get('/predict',
+              {textarea:textarea},
+              function(response){
+                alert(response);
+              });
+      });
+    });
+  </script>
+</html>
